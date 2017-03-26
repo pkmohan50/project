@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  <style>
+    body
+        {
+         margin:0px;
+
+        }
+
+        #menu{
+          
+          
+          height: 60px;
+          background-color: Black;
+          box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+          text-align: center;
+          
+
+
+        }
+
+        label
+        {      
+        
+          font-family: 'Titillium Web', sans-serif; 
+          color: #1abc9c;
+            font-weight:bolder;
+            font-size: 45px;
+            
+
+        
+        }
+ 
+         div
+          {
+            margin:0px;
+          }
+
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+              
+              margin:0px;
+              
+          }
+
+        .container {
+          padding-right: 0px;
+          padding-left: 0px;
+          padding: 0px;
+          margin:0px;
+          }
+
+          .carousel{
+            position: relative;
+            margin:0px;
+            bottom: 20px;
+          }
+        .icon
+        {
+          display: inline;
+        }
+
+         .icont
+        {
+            position: relative;
+            top: 65px;
+            left: 50px;
+        }
+
+         .tile
+        {
+      
+            border: solid;
+            border-color:Teal;
+            border-width:7px;
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+            height: 220px;
+
+            background-color:White;
+  
+          }
+
+          .res h1{
+            color:Black;
+             font-family: 'Titillium Web', sans-serif;
+              font-weight:bold; font-size:20px;
+                position:absolute;
+                text-align: center;
+                margin:0px;
+                left: 200px;
+                top: 50px;
+                               
+
+          }
+
+          body,a,span  {
+    font-family: "Lato", sans-serif;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    top: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a{
+  text-decoration: none;
+}
+
+.iconh
+{
+
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom:45px;
+  margin:0px;
+  padding: 0px;
+  
+
+}
+
+#mleft{
+
+    text-align: left;
+
+}
+
+
+  </style>
+
+<!--LINKS-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="slidesho=w.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+
+ <!--FONTS-->
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <script type="text/javascript" src="slideshow.js"></script>
+ 
+
+</head>
+
+
+  <body>
+  
+
+    <div id="menu">
+      <div id=mleft>
+      <div id="mySidenav" class="sidenav">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="contact.html">CONTACTS</a>
+</div>
+
+
+<span style="cursor:pointer; color:White;  font-size:30px; position:relative; top:7px; left:7px;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</div>
+
+   <img class="icon" width="48px" style="position:relative; bottom:55px; text-align:center;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFiUlEQVRoQ+2ZXUxcRRTH/2fZZflquyBfJUGWSqkFE9loYh+Uj9RoQRq3MSlNNBEffJUlsn0VXmrg3oRtfNFoU9qH+qBJITRQmjaFB5NialjSVG1KLbWm1ah8lFaguzBm7u7CArs7c/deMCTO4+45Z85vzpkzM+cStvmgbe4/TAPwer1jAKoEC+JnjM0A8AMYVlW1z+gCmgZwvO3jG4wsL+hxiMMQUW8gEGj1+XwcTPcwDMCOOWuxbGkBwS2a/UGqA/Nkwx17LsYzi+f/tO1I5zrhqPhUVe0Q2Vj/f9IA7JjTCWb5BECz3kkj8tPWTHyT7ZqdSC/YFf7NHwgE6vREIykAdtTpBug0iBzJOh+td8eeh7O5rzyaT7HvBDAJ4IiiKHyfCIduANbkbAEsPqFlnQLzFhu6C1+fmrFm5HCIQCDgkomELgDWtMcDoFunb7rETxTVRyD8iqK4RMrSAFrakOW8yKDR/3kkThQdml60pGYzxjpUVW1PZFMKQNuwyzRmVs6LIPme+KKgWqtOwWCwNFEqyQEcLe0B0fuiic38//P81/76JS0/F8BJRVF46sYcQgCtzjPLVdOcy7QCVfnAr3PA/bm4ZnmJ/bTokBYFVVWzkwdoKu0F6G3DABHH94Z9eboEXLwLTC3GNd25+83Hf9uysojoSFdXV28swYQRYG6nA3bLtCHnCzIAVz5QmLnRjADi0s79uOyo4Hpx0ygxgJHKU7wDqHwmtuPRKByibwJ4EtwAGNnMAEYURanVH4FkNu9zDsCVB2SlygduagEYnAQCS2t0+N3JV3iQ/xb3TBBEoHQYRDVCT2wpQNmu0IrrcTzacByI48++o0kpihLTVxEAr/3x7/jc8YqckOOpKUJOoUAMCGMATXtYzEkjFaVkpzmOR09yexr47sHKL+YCrC+FwiVNUiAKwhyARKUwSR+FamEIcwCaK4XzbYpAz018mFOP27/9gYWnAT7F5BLRB9cv9g5H5ou7idm5cjeGg+cxy99c/x1AzRMXFgNrzojJ0aG+UgmAvaES+sMScFA7DTeMmxNTuDL6EAuLQbxVXYzKMv4WEQ9pvSs/4sCNjX2C0aG+lYWPH4Gvy1crkGNfTK86T41jZk4LLXbnpeOjd+UiJa03cwsHevZvmHtTAApz09Hynn6AhHqGAM6FU4jzx4kAT4XL10Ip1FijL4Wk9IwBlLtBCD0h4wCIs92gxMwtvHq2AsHlNefpvdGhPqdwE3MBrRKBeZD9vPg+ZNDXmOrTP4+o3+f3fvtTLn+RldhtVvwTXKqTKqPRBtlgox+gFzfDx/g22TjVX1i5h3m9Xi0M6y91wielFomBw8MgbG0UGEaooV97A3i9Xg4yxhgbV1V1zeVSEqDRB6KWLY0AYyep4YL2mG9ra/MQUTdj7IyqqmtamXIAg421AJn3sJdZiZQlF70x4Pd4PA6r1XqXiByMsTpVVVeuEdyMFICWRoOHefs70oSVccGIzCzV92t9V6/XezrcQI75rNQB0NgOEO9Gb8FgHa1DZT6bzcbbmDxl+I2sNlbDVx7gqtuB+aAfRCUyBCMTDF+NWvB4EfBUL6OmTG6q+4/sDz+7XtrJGGvnaZPIeV0pFK5Gq4ebgMJ9ivD7XMjpzDQ7XiqX4l5vdQSAJ1GrXW5ZosyyAbmKFA2QYU/Fy/tWDs+E6LxUhr+h9azfsLEUdQOEN3QPgIS9Up5CX14LpVBrjVQKnaH6ft1fe5ICCKWTXCRk9guiar6UfJRQ0gArewKMH3JJJTgYuweQhxr6Y/Y9ZWAMAWgQvDotBD3cER3nxCw4eJrVR3W9SX1ejcAZBoheJXapoQpBSzNAVSDmWL0AsnEwmgGYH9blHn7CyqyujIypADITmi3zP4DZK6rX3raPwL94SThPv3R1mwAAAABJRU5ErkJggg==" width="48" height="48"><label style="position:relative; bottom:45px;">SERVICES</label>
+
+    
+    </div>
+
+
+<div style="width:100%;" class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images\ser1.jpg" alt="Chania" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images\ser2.jpg" alt="Chania" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images\ser3.jpg" alt="Flower" style="width:100%;">
+      </div>
+    
+    
+  </div>
+</div>
+</div>
+
+  <div class="col-md-4" style="text-align: left; width: 100%; height: 100%;" >
+        <ul id="amenitieslist" class="list-group" style="width: 100%; height: 100%;">
+          <!-- Conatct Object li.list-group-item.contact will be added here by js -->
+        </ul>
+    </div>
+<script src="aapp.js"></script>
+
+
+<!--
+<div class="tile" >
+<div class="res">
+<a href="">
+
+<img class="icont" style="position:relative; top:50px;" src="https://s1.postimg.org/vrz8iq8gv/kusadasi_taxi_logo.png" width="100" height="100">
+<label style="font-size:20px; position: relative; left:95px; color:Black;">Taxi Service</label></a>
+
+</div>
+</div>
+
+
+<div class="tile" style="position:relative; top:20px;">
+<div class="res">
+<a href="">
+
+<img class="icont" style="position:relative; top:60px;" src="https://s4.postimg.org/xgto02731/atm_clipart_atm_machine_sign_hi_png_y0hzd6_clipa.png" width="100" height="100">
+<h1 >ATM</h1></a>
+
+</div>
+</div>
+
+<div class="tile" style="position:relative; top:40px;">
+<div class="res">
+<a href=""> 
+
+<img class="icont" src="https://s28.postimg.org/d50kil50d/209233_200.png" width="100" height="100">
+<h1>Foreign Exchange</h1></a>
+
+
+</div>
+
+</div>
+
+
+
+<div class="tile" style="position:relative; top:60px;">
+<div class="res">
+<a href="">
+
+<img class="icont" src="https://s28.postimg.org/8pu6oed7x/f4c851183b5ed083a6b08340a9c0a527.jpg" width="120" height="120">
+<h1>Medical</h1></a>
+
+</div>
+</div>
+-->
+
+  </body>
+
+
+
+</html>

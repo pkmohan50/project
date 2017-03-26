@@ -1,0 +1,216 @@
+<html>
+<head>
+    <style>
+        body
+        {
+           margin:0px;
+           background-color:  #008060;
+           
+        }
+   
+
+              .jumbotron{
+                display: inline;
+                text-align: center;
+                margin: 0px;
+
+              }
+
+              .res{
+                text-align: center;
+                margin:0px;
+                margin-left:20px;
+                position: relative;
+                bottom: 50px;
+              }
+
+              .container1 h1{
+                text-align: center;
+                
+              }
+
+              .destination h1{
+              display:inline-block;  
+               color: White;
+               position: relative;
+                font-family: 'Titillium Web', sans-serif;
+
+
+              }
+
+              .destination{
+                position: relative;
+                bottom: 100px;
+              }
+
+        .menu
+        {
+           height: 60px;
+           padding-right: 300px;
+           background-color: Black;
+           box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+           
+        }
+
+        .menu a{
+            position: relative;
+            top: -60px;
+            left: 10px;
+        }
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.label,.label1{
+   
+ font-family: 'Titillium Web', sans-serif;
+ font-size:25px;
+ margin-left: 0px;
+
+
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 32px;
+    
+    text-decoration:none; 
+    font-size: 16px;
+    cursor: pointer;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+    </style>
+    <title>
+        AIRTRACK
+    </title>
+<!-- css -->
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--web fonts-->
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="menu">
+<div id="mySidenav" class="sidenav">
+  <a style="position:relative;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="contact.html">CONTACTS</a>
+</div>
+
+
+<span style="font-size:30px; cursor:pointer; position:relative;  top: 10px; left:5px;  color:White;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</div><br><br><br>
+<div style="text-align: center;width:100%;" class="tiles">
+
+
+
+
+
+</div>
+
+<div class="jumbotron" >
+<div class="res">
+
+<img class="icon" style="margin:0px; text-align:center; position:relative; top:20px; right:5px; border:dotted; border-color:#01ffff;" src="https://s3.postimg.org/pef3dl64j/462084.jpg" width="200" height="200">
+</div>
+
+<div class="text" style=" font-family: 'Titillium Web', sans-serif; font-size:20px; color:White; border:solid; border-color:#01ffff; margin:0px; padding:0px; background-color:#4CAF50; ">
+<h1 style="padding:0px;">INDIGO AIRLINES</h1>
+
+<h1 style="padding:0px;">6E</h1>
+</div>
+<div class="destination">
+<h1 style="position:relative; left:50px;">CBE</h1><label style="font-family: 'Titillium Web', sans-serif; display:inline; margin:0px; position: relative; top:40px; right:15px;  color:#01ffff; font-weight:bold;">Coimbatore</label><img src="airnav.png" style="position:relative; top:95px;"><h1 style="position:relative; left:30px;">VAR</h1><label style="font-family: 'Titillium Web', sans-serif; display:inline; margin:0px; position: relative; top:40px; color:#01ffff; font-weight:bold; right:25px;  " >Varanasi</label>
+</div>
+
+
+<div class="time"  style="position:relative; bottom:60px;  text-align:left;   display:inline-block;   color: White; font-family: 'Titillium Web', sans-serif; ">
+<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACdUlEQVRoQ+2Yj22TMRDFXyco3YBOAExQNqCdAJgAmIB2AmCDdoK2EwAbwATABMAEoJ9kR47j//flqyLZUpQose/eu3d3vnxHOvB1dOD4NQk8tIJTgamAMQIzhYwBNB+fCphDaDQwFTAGMHX8paTn7vXYbfgm6U7SJ0l/wkOjCjyS9EbSW0l8xjiv+9hBB0GAX0ryoFNHsX9uJfBU0mcHPOUEIteOTAv+FuDezt/Y76gCRJ5oHRcQInWoTLjVK/iqEvHY/JXzu/l+lAAGkJpInxVI/HIO2ceKU69FIb/nRhKEt5aFgDeUUiMGDllSxddMD3BscQ41d9YSBHxkiTIRJrW+OE8Af5+KXAOD75I+OpWz25ciEDuwAP8aBaHIdWkC9G9SZSdXGyLeBdzbSxEgDQBBF2nt6wAnVXgfWa9rqZIzmiJAsbwIDpQuKStw3Oz09p4I5BSgCJ8kDHky/FS7NVtxMB7QZYZWrgZIoxyJIUeFQ88kMesMrVIR00kwXLpta05JDwIRpmR4hh5fmn1q9qvPhZh7ANBLwl9kpJyfnVJg3rleXwXaU8Tx3lYSRNsPcv4iwxbT420GwKmkn8PopaoC3jYyAy4sbACTYoDlt1weU+y02HjR90fb7sZW70UGEQq8p+hyBIZ7fxiJXgIjaqNQamI9Mfz5GVZgKQLJ0XjE+BoK/Ei0yovceNxLYg0C/yJQptEhJrhvAhT878ipaXRYmwBtkgcA4TKNDg9NwDw6rE2AKfND4NQ8OqxNILzEuHkZK7aerPV2nbUJ8Kec25v3cD6y4l71IlsMbMrQvtvoXsFjfBLYe4grDqYCUwFjBA4+hf4DmSlqMZ/4LH0AAAAASUVORK5CYII=" width="48" height="48"><h1 style="position:relative; left:50px; bottom:70px;">DEPARTURE TIME: 11:40 AM</h1>
+
+
+
+<img class="icon" style="position: relative;  bottom:60px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAClUlEQVRoQ+2Y63EVMQxGv1QAqQCoAKgAqAA6ACoIHQAVkFQAVABUAHQAHUAHSQVhzmQVHGfXlta63AmzntnJj8iSjl6274Fu+Dq44f5rA9h3BrcMbBkYjMB/XUKfJH2W9NEZpAeSTiX9csqniLUycD5ZeCnpg8PaG0mvJwAD/+HYNyTiASCq96botow9lvS1EmDfTjPiAcCnt5KIcG9Z1kyO8nvR2zTyfy8ANjzR/CbpUeXQQ0k7K6UIgCea1gclA1BPRqLc2hsBQA+O4NDSmusDz77VfC0AmvdWpdkTzboPUOHZtwqiBTBXz+YMY/XLwmRa2tfL3j8DKA3RnAZj4/K2pGeSKCf+WhZ3koVWBhh/7wNhAQYnafZy6hgIMOhs9VDA3IVo7y5EdJ+HtV4cXpzGfN9X7Hdv6QGgiKgdzzS01wjDwGDom9TlAcDg3QniaYL1Ega4oeUFMCPUM9m4P2T172Zg6Akys+rOFAUw05QVp+6dJBDUzE20rvq1AGVGXknKKK3SWRsCJ73MjAKYUXrExmRWeZluSpbb8Gy/ZAGUGeElx2GWuSgvTvJrEJkA0YMvCggEV/MrKwuAp6TnwRN1upa/9rDKAOC6EXl1cTIDSznQN8B7F3sOS+ERAOqcNzC/RniWOV7eheoH0O/OaD6r+2stAE4TeY/zc44bcH31pkSYOmSGrxzPPyUxsq9cBtcA4DSR700aokmEWz/J1BmYezNgZ/HKEQWg1t91nPc4XpYcOgmKXSs85XgpEwE4mtK7ZCDqeMjRJWEvQGvS0FjULd/w7TJK5QHAMaJfr706bs54AJAtn4U01d4ivquTOJr5NHlvBtIMZivaALIjGtW3ZSAasWz5LQPZEY3q2zIQjVi2/B+j94MxIM2N2gAAAABJRU5ErkJggg==" width="48" height="48"><h1  style="position:relative; left:50px; bottom:130px;">ARRIVAL TIME: 1:00 AM</h1>
+</div>
+
+<div id="but">
+<a href="RASHMI LOOSU PUT THE LINK HERE!!" class="button" style="text-align:center;">SHOW IN MAP</a>
+</div>
+
+<div class="gate" style="text-align:left; color: White; font-family: 'Titillium Web', sans-serif;"  >
+<img class="icon" style="position:relative;bottom: 150px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAADWUlEQVR4Xu2c4ZHTMBhE9zqADqACoAKgBCoAOqAUOgAqgA6ACoAKoAPoAEYzYVAUJco6Xqy7e/l34+9by+9Zln0z9pX4TUXgaqrRMBghZLKTACEImYzAZMNhhlwzIc8lvZL0cDfur5JeS3o32XHMOhyb37EZckfSx0pEe8BFzFNJv2YlsfG4FvM7JuTLCRl/j7VIebTxgc+6+8X8ekJeSHpz5pG+lPT2zNrbUnYRv56Q1m5ZL8o6Un4fJD2uyDJLDk+zi/j1hPxu9nG3WivKtfFns507tX0gF/FzhdyT9B0hJ6++p4QM+fWElMvQg2qXnyQ92/39XtKTatu3Mxb/27J21Dc7i/mxqK9/uqy+qJchtrOkN2xmx3GZi/nxHLL+DCmJPIdkuC5KXf2S5dxHLxpxuGnr23CH38FznHvb23sOCfO147cWEn8OaQ+w3aFNLNwwm5ARv73t58yQUWCYrx2PEBtZtgEhWb52OkJsZNkGhGT52ukIsZFlGxCS5WunI8RGlm1ASJavnY4QG1m2ASFZvnY6Qmxk2QaEZPna6QixkWUbEJLla6cjxEaWbUBIlq+djhAbWbYBIVm+djpCbGTZBoRk+drpCLGRZRsQkuVrpyPERpZtQEiWr52OEBtZtgEhWb52OkJsZNkGhGT52ukIsZFlGxCS5WunI8RG5jV8llReEyu/8hmP+ksSvSSEeHzt6vuSfuy6ei/et4EIsRF7DS3g0RtcCPH42tUIaZC5QGzigwZ3/8yQtQ1ceEIgBCF7BNo1bjTD97b3ziY3MOzj4GPPLOoN8RGQtQWNzjBue9cmzqL+j8B1uGTVnxjkwVCyr+FrT6DyRbvy9dPyK19Lrb9ox79OJP3vNcQVzG2vSyxcj5AwYDceIS6xcD1CwoDdeIS4xML1CAkDduMR4hIL1yMkDNiNR4hLLFyPkDBgNx4hLrFwPULCgN14hLjEwvUICQN24xHiEgvXIyQM2I1HiEssXI+QMGA3HiEusXA9QsKA3XiEuMTC9QgJA3bjEeISC9cjJAzYjUeISyxcj5AwYDceIS6xcD1CwoDdeIS4xML1N15ImN/q8bMJGR3g3nh7g5/9dQPrAEfFge0uP4QEJNSRCGkA37hLVvgEIv4Uga3PJuw0BP4AM9KNdDipmoYAAAAASUVORK5CYII=" width="100" height="100">
+<h1 style="position:relative; bottom:240px; left:120px;">BOARDING GATE: B14</h1>
+
+</div>
+
+
+
+</body>
+</html> 

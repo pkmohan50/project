@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+
+    <style>
+        body
+        {
+           margin:0px;
+
+        }
+
+        #menu{
+          
+            
+          height: 60px;
+          background-color: Black;
+          box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+          text-align: center;
+          
+
+
+        }
+
+        label
+        {      
+        
+          font-family: 'Titillium Web', sans-serif; 
+          color: #1abc9c;
+            font-weight:bolder;
+            font-size: 45px;
+            
+
+        
+        }
+ 
+         div
+          {
+            margin:0px;
+          }
+
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+              
+              margin:0px;
+              
+          }
+
+        .container {
+          padding-right: 0px;
+          padding-left: 0px;
+          padding: 0px;
+          margin:0px;
+          }
+
+          .carousel{
+            position: relative;
+            margin:0px;
+            bottom: 20px;
+          }
+        .icon
+        {
+          display: inline;
+        }
+
+         .icont
+        {
+            position: relative;
+            top: 65px;
+            left: 50px;
+        }
+
+         .tile
+        {
+      
+            border: solid;
+            border-color:Teal;
+            border-width:7px;
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+            height: 220px;
+
+            background-color:White;
+  
+          }
+
+          .res h1{
+            color:Black;
+             font-family: 'Titillium Web', sans-serif;
+              font-weight:bold; font-size:20px;
+                position:absolute;
+                text-align: center;
+                margin:0px;
+                left: 200px;
+                top: 50px;
+                               
+
+          }
+
+          body,a,span  {
+    font-family: "Lato", sans-serif;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    top: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a{
+  text-decoration: none;
+}
+
+.iconh
+{
+
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom:45px;
+  margin:0px;
+  padding: 0px;
+  
+
+}
+
+#mleft{
+
+    text-align: left;
+
+}
+
+#bg {
+
+    background-size: cover;
+}
+
+
+
+
+    </style>
+
+<!--LINKS-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="slidesho=w.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <!--FONTS-->
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <script type="text/javascript" src="slideshow.js"></script>
+ 
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="Full screen background video demo">
+  <meta name="author" description="Call Me Nick">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+    <body bgcolor="#ff7272">
+    
+
+
+        <div id="menu">
+      <div id=mleft>
+            <div id="mySidenav" class="sidenav">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="#">CONTACTS</a>
+</div>
+
+
+<span style="cursor:pointer; color:White;  font-size:30px; position:relative; top:7px; left:7px;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</div>
+
+   <img class="icon" style="position:relative; bottom:55px; text-align:center;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEpUlEQVR4Xu2dS09TQRTHz4SWIM8rKYQUNJWIEsCACaBpTKwL3crC7yF+k8v3cKFrLXRhiAksSniEiMFGgRBosAgisYWauaYRSh9zpjOdOPfMqgnn0fv/nXMGbm8ZBrSMKsCMZqfkQAAMFwEBIACGFTCcnjqAABhWwHB66oD/HcDcWFMEgg0vASAGjI0VX08s+sDwJWpJnwTIJwDOZ5ibSNWSoaYOmJtocYExLn7ZZSmAC9ebd5k7+0oWgjSA2cmWJAM2Wi2x/QA8BRLMjT+ppkWpn0sBEKn8QjKfAACA/AxzZ6exENAAvJnfGPgimsg/ALgiZ7ewewIegMDcvwjHXwDwXYAGIDr7/TeCvCtOMjd+X3Q6cDs0gLnJ1jwmgb86AIC5cZSmKGMuPAGoXH4EANOeGmwJgAZRMSEJAEYtDbYEQIOomJAEAKOWBlsCoEFUTEgCgFFLgy0B0CAqJiQBwKilwZYAaBAVE5IAYNTSYEsANIiKCUkAMGppsCUAGkTFhCQAGLU02PoOQOb4J+ykD2A/cwT8NV9Oawt0OW0QDnV6r+u5fAVgY2sHlj5/LatvMNAAQ5FeGOgL142BbwDMr6zDTjojJGw4dB2iI3eFbGs18gWAapVfSsTR2zfr0gnWA+Bz/v3iMrpQ+Th6PDakfU+wHsBa6huspbbRALgD3w+GIjekfEWdrAeQSK5COnMkqsclu5DTBrGxYSlfUSfrAbz5sAC53JmoHpfs+Bh6/mhCylfUiQBUUCoQaIApAiBaS6XtaAQZfjSRNmHDAPivoYnkGnof4OPn2fg9aG5qqq0Fq3hbvwfw66c/xBA1pOvpaNytCAeiI4OIdy1v6osOKMjDO2E1tV12HPGxM0w34/R+TbVwO3ov8wMyxyceG6e1Gbqddoj0dGmf+cW94qsOkB8U+jwJgD5thSITACGZ9BkRAH3aCkX2DYBsLut9IradPoBs7gx+57JwePzLE6mj9Ro0BoLAb771hjohHHIgGAgKCVirkfUA9jOHsLG1Czvp7yit+MeSA3090OV0oPywxtYC4BW/sL6JFr5YQA5iYrBfW0dYCYBX/fzKJ2/UqFh8NEVH7mjpBusApHb3YHF9U4XuV2KMD/ZDpKdbaWyrAPAHrnjl61y8E/gDXKqWNQBOTk/h3eKysrFTTmA+jp4qvE1tDYBaPvnCVnOX0+49sqJiWQPgdeKjCj2EY7yIPRS2rWRIACRlJABFwlEHlKmkev27GgJgGIDkJDHuZs0eYFxJyTdAACSFU+VGAFQpKRmHAEgKp8qNAKhSUjIOAZAUTpUbAVClpGQcAiApnCo3AqBKSck4BEBSOFVuBECVkpJxCICkcKrcCIAqJSXjEABJ4VS5EQBVSkrGIQCSwqly0w6AjjCphCq/xNzZK4fZVfLAn6BBh/hU0LMOh/jQMVaV6rkOx1jx9HSQWykI+OrnUdAjqJBadC/Q9T1hVZumojhvmRufkoklDUC0E+wHIFf5BVg1AfAg/D3OdjrPIFbqcE87AeSX+AGeAOcu9ujC4i6pGYBM25HPPwUIgOFqIAAEwLAChtNTBxAAwwoYTk8dQAAMK2A4/R+IKiZ/ZAGACwAAAABJRU5ErkJggg==" width="48" height="48"><label style="position:relative; bottom:45px;">CONTACTS</label>
+
+    
+    </div> 
+
+<video id="my-video" class="video" muted loop width="100%">
+  <source src="79.mp4" type="video/mp4">
+  <source src="79.ogv" type="video/ogg">
+  <source src="79.webm" type="video/webm">
+</video>
+
+<script>
+(function() {
+
+  var video = document.getElementById("my-video");
+
+ 
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
+
+         </body>
+
+
+
+</html>

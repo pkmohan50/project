@@ -1,0 +1,194 @@
+<html>
+<head>
+    <style>
+        body
+        {
+	       margin:0px;
+           background-color: White;
+        }
+        .res
+        {
+      
+            border: solid;
+            border-color:Grey;
+            display: inline-block;
+            white-space: nowrap;
+            width: 30%;
+            height: 200px;
+        }
+        h1
+        {
+	       color: White;
+	       background-color: #1abc9c;
+	       text-align: center;
+	       font-family: 'Titillium Web', sans-serif;
+	       padding:10px;
+        }
+        .icon
+        {
+            position: relative;
+            top: 65px;
+        }
+        .menu
+        {
+	       height: 60px;
+	       padding-right: 300px;
+	       background-color: Black;
+           box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+           
+        }
+
+        p{
+
+            font-family: 'Titillium Web', sans-serif;
+            color: #1abc9c;
+            font-weight:bolder;
+        }
+
+        .menu a{
+            position: relative;
+            top: -60px;
+            left: 10px;
+        }
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+    </style>
+	<title>
+		AIRTRACK
+	</title>
+<!-- css -->
+<!--<link rel="stylesheet" href="main.css" type="text/css" >-->
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--web fonts-->
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+</head>
+<body>
+<!--<div class="main">-->
+<!--menu button -->
+
+
+<div class="menu">
+<div id="mySidenav" class="sidenav">
+  <a style="position:relative;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="#">CONTACTS</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer; position:relative;  top: 10px; left:5px;  color:White;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</div><br><br><br>
+<div style="text-align: center;width:100%;" class="tiles">
+
+<a href="flightdetails.html">
+<div class="res">
+<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD2ElEQVRoQ9VZTVbaUBT+bnCgMqhdQRkiGZQOek4YmaxAdiBdQd1BcQXaFWhXoF1BtBM4p4PiAOqsuILqQGUg3J6XkBhCEm5+QPqmvLz3fff3exfCf7Bso2pqVNpnRh0EE+AeMS4mo8evtM74rwz9gMFtEFWicDLz0VoSUBYnaKdxwF/IcG/tCFw19GMGDqWRsTYE7HplhzbL526MyxYzrgon8KNR3Rszbq3uzVAGA3DAb23bANWl36h9DC4uiW1DbxHhGMCOczjzkdUdtBcBygrevWNsFeKBKfjTMFh+xgfrZ78XRyIXePCt1RlUZgjYjd1DAu0RI3ApDYnGfjiMn0bXVm9454GKA+9ZyOreXEYRyAPePRufrG7/zCeQBGRRGMT9TsxtoolPwMuN3OCn1lf3OgSWAT4racl3KvY9z5Ld2G0StHPJh+uwR1UeqzPw+4TrgcZuE6w1ATSJ8GYdgEZLB3yzuv1W8LfZJK5XdrBZVkRUSdxbJyLM8+D9HIisEka1AmgtEFoEeveaZOLAJxIIArY/6nWUHH2y8hBLAi8mMEPG0FsgbhJof9leWQQ+EwG/gal82dpqgTWVL++LJiMBn4vAXIhtcAtMikwhVczs9EUyR7RJal23w5b/eIJO+l3UvpUTyCsPwiT46eFtUHPFypU8VgrmQxY9n3R3UC4k7csdQkVb3gO7EgLLAq9ILJ3AMsG7BPioRBN7/Fy6T3oUZQqhZYOfS+iQAo0Vc5KEXjV4PydiqlIqDxQBnhnXWTp3XE6ICRQE3tHzdqM2TKNwmXFvdfvOtCO85t4D2ub256iNTGimndsEzwlqG7tROyFQ5D2Rd08f8IkEirBwXA6FhZmS57SBX5Kc86YPiZ14leD97m3ovUW5sAi8o0ZfA7y62J1BaWqSF7skgo5so9YG6LAoGfwiBaLfsLP6qfw3NwH/QPVs3JiYAJlgMvMQkj5G7EbtIullJ/JAnAVs51FfUqNuE8SmtOxJwU/DKHEmJZHU8j4wnVIQ0RdptZFUGdvQ7+K8LRF0YgKOxYxqhaikXlxzi8Hfrc5AzZRSLdvQz4hwEF3/X0aIiWU0zY1xXVT6f0D4rqSeULgHXC9EWywrATcXoqWFqA+ksX5S/c5HILonSM5MlQMOgRgZILksqeJF5ZbkzNQEpmE0VzkklyV52zb0y/BAWXJmNgIRDUhy2QICaig28z+bpLJlJDAbs+qRgtGDKZnjxIaRO9ofBnvCUpI4nAdFgPflTKDCScCr7zJ5wMsDAMO8lg96xPu7Swo+J4FaG6PHkzxhExVOioTV+X0hLe//ACnJJhcqsuPDAAAAAElFTkSuQmCC" width="48" height="48">
+<p class="icon"> FLIGHTS</p>
+</div></a>
+
+
+<a href="map.html" >
+<div class="res">
+<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEx0lEQVRoQ81ZTZLaVhD+WjhVk3gRcoIwOxsWM16kSmw86AQen8AzJzBzApMTGJ8gzAnCnECalUhlYbIAe2dyA7KYn1QZOtVSBE9C0ntPYxhYon7d/fV/v0eB2/IJGJyMJpfYws//pXXsPMEbZhyv2fPMYQwX/95ee+PZvIpY333WIdTeUdBuccSAeSZAlve3H6oyVRURxamG9yB0ChWMZFLPxniJ4gnfNQBVCvOAsbz0Rp+DStZpPz8lOL8BqBudZx50RtPzMtqs4gltPoAVJx4TU7/MQsJYyBOwkeWf4KOR4hmj5YEoUtwQwErCnJj7y9grM/lXZcx3Nz8lYRe4zS8galgDiKJ44aUMoQtBACkPMOMfEUyEH0vidgBQI4lBZlx6o8lZBKr9vEtw3mfPMvhvgPtgHoOoDtAZgV5tyuBxJ5y++J+XhOHvOkNkAVx7o0nHd1uiUJcIRzoGjOWFF37qC13Qbn4ESKk2YlVc4/7mNFsYCsHy4jDx8qrAiHfECEw9AGdEOMkNIREmAJKPcXzX5MCbIiCq21WBCT0rCmV5+G5rnDWSahD5DuK6KO6NJoM4dFuBMQAFSANwzgASr0ThlVhkxTgneYXGC6eF+eC7zR4RvUvnMv/qjaZi6SjPspWwEgBVQOSVRW3u/TkZZ/5vENW+pKzMPOuMpodF3tMByDv3YABlOZEbQkqFyp6VKSDb6BjL1174aVgMukII6RJ5FWrt5nCzuvCwE05fb8R/3Ow2qoxaknfuAb9AKTAChxa9xd39X/juacOp8SumqKJkIm5dkh/FA3H9bsp887Op19IJvG5kjwggv5npAGVL+OMBOG7UcfB0VtrNc7RT+0kZ2K1WoXUy23nB1PqVG5nO/bnVwiIXTK2/WwBuS0YQ2QlKf+owqKPdKQDTilQ2K+28D2w0K40XbK2/cw/ovGBrfS2A2II8BtOcCGNacvDyj+mVSWyW1O3cXLCpPCrv0jJaoES8Tj7gtsJ3W2KQ1JanG9oqNTKNpeeM5XnZpFgotN3sE+ht8l23J1RuZCahQkD/JJxcmNCuGltm2WHwBy+cdm14rHiVbWRWDJlnTCz7cOHsnopdpbFVDR/DJLaCIUv7ebJWmrpeN/Ob8hE6zcWWGRj+ihfZFXOjJyh50AknZMZ5k6pKFdLKYvCVF05Pyy33TJb7Rt4+rRWgEGwFQNQ9lFs1G4VsabcGQBpgcqtmq5QN/RYBRH4Y8t3teXIL5x836rXvD45ehp+vbZTceRJnBM4BDsBUz1yZzME8lIeNh4wnW/aAoZ0ZAS9woatcedz2A0Cs2Zy/wrMFsU8AYhB3N4c2T1r7BiBK/Lybu6Jg3EMAgEkn//bDnGG+mpDZrJZ76QEBqZuPpKc4Bz+8ZSIZw1evn99kmDOxso6maBQpUjzhR77bGpQ9IekEl32P3scAuWYsfKJKzjOvX2bkP53i8fyF62is9V2ZFNNPSA9XfNFbPZma8pcHduIrh+koGyqqPrFhYv4bc7nNC2UWpMo4t4vGF7+nIO5VuYLP41+4WJi8UK7dv7aIqeci/uR089+L01zKDKPdjMrCS2dxEzARf3K6YJL7o/TVixIqRby0ANSDSXjJCJDEoImSJjSStEl4gWlmyv8/21J8vXlBB/4AAAAASUVORK5CYII=" width="48" height="48">
+<p class="icon">MAPS</p>
+</div></a>
+
+<a href="shop.html" >
+<div class="res">
+<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADlElEQVRoQ+1ZS3LaQBB9LWcRx4uQEwTvbFgEL1IFq0gniH0COycIOUHICUJOEHwCkxNIXqGqLIwXYO+MTxBn4YoXQZ3SCImZ0QDiU7JTJVYUGnX36+55r2cg/OcfMsXv1vfKW4TXTwnbmHHr+NcjPaYUAK9RuQCo9pSCn8bCfbs3PJBjUwC49T2baMt9msFHUTGPHce/9uIYCwB5V2t+BWrlEp7vjIjwMu/Asvhjxm883Jed/ujO2ELhj24E4hDgchaj+a2hER7uu3LwoW8jjeYX1PqeUgDcevWEgOP1TW/eAgOnjj/ozKbRt9UaPcPF5l1vziL/xYHzc9AvaHRzOV3O0nwabew3CdbX5Uzmu5oRfHJ6V21jC8lzEDMuASR8C6BEhDfxi8w4V0InLhNIDICCr4GkTyfrarG+MPgWTMpgRoR3ku05vtV5KGGhcAIl2rqJjdi9gTpmNPYPCdbZJMBLxx8oA59br7SI6PPk+bnjD2wZoFuvenGQzPzF8Yct7Xk/ThAjOHJ6V934eahNtL3zawpwvBtPplMAUvsw+IfTGx6qDqQAFz//5vSGTS3ADlFEz0YAjUqXQO+XfZ4A8OqVGxAJ9WXGB51vM2RwQYaXSAAjXUF5fzKPbH+4myixq/E/87REcRa9RpWTEmolDn9fDHBBi0ktGtpLtbDW4rEeiAq4jUqbQB9n9ncGgGsD0H1ogjVJkrRPWLSpAKC2j2GDafSqZ0fYkCtk3KTTCpgynLKh0aWeaEzaiFLtY0YubcB0f24KgFpFMfecKESgVwnBEYnhjfA96e8/96/0kVXTh/QGS9GciSbVCrDBjwYgkx8S8//2iw6YQt7ugoK+rHR6haJ9om5yV1dwhmf7A0fOnlevuiAk2qAr6kSHwkGyZOL7qIX2m2Ar1J+Q4sPzgW06E59RELTI4j4CqxQQ2jG9JgExjyxGE1ZwxwHV2LJCUUocR+u4ayEQkh/AagKk6Eqo8sTcJgo84cdCK3UbYvDDPD4qDvVya+T9vbhWyTvjur+VKsCMU4BT95JZwMQTqrw2GsU5uV0z26FyPPyp765wM6ejzhJ4vEZW6Ck9pnVCtznrmnPFCqioCwCGWamoQDSumq/Xiz2g9YfpSFm0UNFCM7i10IHU/imUeBkdVg/7jzZKgLlD4RFuhQ8TKVeI4qyWtxKvEPfcVwoAj/1Hd1GBWRUQaizdk26699dlIUZ0HyrH9Q+Ls9aPRjGHawAAAABJRU5ErkJggg==" width="48" height="48">
+<p class="icon">SHOPS</p>
+</div></a>
+
+
+<h1 align="center"> AIRTRACK</h1>
+
+<a href="service.html" >
+<div class="res">
+<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEq0lEQVRoQ9VZTZLaRhT+Hrgq48zC+ATBuxlYBC9cJVYjncDMCQafIPIJwpzA+ARmTmB8AmlWKJWFlQWMdyYnCFlgWBg9V7ckghkhdUtNOaOtWq33vd/vvUd44A89cPlhDIBnnTVrqF8wcQ9MDYCbIGrGCuKQV18cJ5wvTCusMoBbq33FxC5AnXzhOGSOLp3g09wkiNIAvO55j5je/KdlTbEYPnE0jqLarfPnNNT8enu8FADfar0DUb/sT+99x/AZm2sn+OTr3qkFwOs0G3Ry+h4EW/dHKucpityLP+7eqpxNz2gBMK75LEmZR3Ywe6UKQhmA1z13CbU3qhdXOceIXjuTu6HKHUoARIokqn9WudDUGebNM5WMpQigPSLClSnhVO5hxo0TTAsTRSGAH6H9FKCKFRQAtPtEeKeiNdNnVGKhGEC3NSbQS9PCqdzHjFsnmOam7EIAfrf9D4CGyg/zzjDjL2DjgmqujkLsyTRXxtyXsnA9PhUAKj3MfI31l2FK5jxLPSnwavk0jwTmA7DObKK6V0Z6ZvwL4hE4GmalQ89qDQByifAk33IbJ49iGAUghQbGAHwnmI6KgIsMB9QHeSma+UgAEmFDEIcAz/G15pdllSkQAL19ixgHIPzZCWaDIu2WeS/ditAH0wDYxH3Deh0ajYGjAuieu1itRjqdm3YMHBWAddYUAS+bJdRE8RStaUggP1otr7OA/a8ApG4nXImIfv/ODRm+HUydfdfMBxBr4v3uR8e0QC4AMRrIqAm5AHyr7e13Xz8UQEZKPQggZaGSAlA0ANd6ILYBdp3Jncj1R3syXUhYQBOArMIqhMo0EjMAXrQ79AgfRRawJ7PnpoXMu88IAPEDr9uaE+gXZrxSoQamQB4EoBvEST5OshCHDL5RbbargMkCwOC3zmTmaqVRaQWr3QfxQFgCwMKeTJ9WEU7lW+9Fu4NHLBopYf1bAKNDHlDY0Gxzc9KZHdOdxOgmJYVetzUk0G+VyNyutoRWZFAfqIgqmi0641utzyBq8Fc4qGNIhAtjABJ3Conwq8q0oEjY/fdpvDH4b2cyayZgmpU6sns/seIJherMRgdEWvXFJAJcWyT/qd7U39dUmlrzJ2ein66dnL6Uiw750DxaLz9kMUovaV2F9sFRn6guMl+jyH3krTpaSrNSPCfisT2ZXWZ9n8SL6KX3pxkL5s3z/R7Z77Y+xgsSHgMkxiiNQ2lTO41mCrgtcNn9qpc3SxKLDfB2D8CAWEV9N0LUcVFtC8QVOqHZzHM7mD3LiBUZ7LrWlTmfoqEOWSwFIKEZcmKXZeq8uY84D44km936OvgDOHJVptFGXEgC6DQbODmdiynCfnFL3vn7VpAaXi97IpDTZYmcbqyXTZ0+eBdEaQtIEFvGKrj6fcInKUF9Ewfypr5Ixy4p15HCb2CXHceUykKHaoO8rGDHFe/YfhabTRm0jOhSx9+zYqqSBdILJeGDLP1PBNUgYHQRTG+270VN+OnxFRO5Yi0bjx2jflXhjVhgK6R0l5i/7Ggq3cxv60HMLjf9MgF7NAvsXiyqqhihg6mZBnHcV/M8GfRq74Lz0rERF9LN9ybPP3gA3wBbh7NP/VwjRgAAAABJRU5ErkJggg==" width="48" height="48">
+<p class="icon">SERVICES</p>
+</div></a>
+
+
+<a href="food.html">
+<div class="res">
+<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFLklEQVRoQ71aQXLiVhB9DanKeGYR5wTBOxsWwYtUiZXRCUJOMJ4TxHMC2ycIOYGZE8RzAjErqMrCZAGZ3TAnCFm4cKoMnWp9CX9JX/pfQrY2rjJfX/3U3e919xehhivwjlsNNM9A6DKjC3ALRK3E1sxLgJYEHsvf7cP9R3+2XO37eKq6QdBtHTa+PXjLDToHqFttH57Rlkfb/9YfqoIpDUDeNqFxCaIBgMNqhmfuWoH5lrG99qefl2X2LAXgk9e+ZKKLGg1P27oi5uHZdHHtCsIJQPBTp0vf8E31UHE1J17HM36kd/6f85ntTiuAwOucE+E301tnxl8AJBG7RPiOGR+AMFn7RDhjxicQr8DUIsKPO/Pk/+oK78sxcsWM9/50PioCUQggMv4mb4P+ZB7eH3idsTJ44/vTz+PAa18R0SUzX/vTxVXgHfeJmsETgN3/W0DzVgeXfhYz3hWByAVgM14etC+AEHy3dYiD1zMC/ZD3oopAGAG4GF8XAOXBpIdMQPJAZACohIW420qRdXggNjbwOrOiUJJc40f46cTOABj32neubFMrgN7JBaEhZFFw8aw/WZzqCxIA4uSzUVf8e60ARCCp+cX27JgY4nU7AKHCUvPOJXTkZqFQfzoPS4iqLJQ2Nui1l0XJHK1fMW9OY8XWAHRGRHhrewM6l/vTeb9WABEd22wQvfGn83NZp3i82zqkgzf/2G7UfxeRqh+A0g8HO1a8vj+SAlABcEqg5LYJAL2TAbhxgYf7gWwqTIYmhsDmSgmbWcgyIRQJoAMAMLbv/cnfwxBAGeYxhZDtgc8BAFCMRFHyWrM/baTugdoAlIwEXt9/T66qmzGSedmfLo5sxqskT4VQ5P59QihkQmx/oaDXHhLoVxdDsl7YHLk0IOkci4s+A43eEuhnV1tEE8QDYSXpelOSiVRVWXRvyHCvXt/pPbIJQMSEEsrWEkbPQxp77S+ZBrwEGlu5O/baNyDpm58u5qznKoUy85LGvQ6XsNe4lJiv0m2gIofGH6a6Ki5B4s1MXnK1qRYAKqH4d3+ykH45FkZjODDjX386T4RJ2RpMB1cfgIQy59f3afqtSuMxiOcCkFtZMvijP1nISCa8Aq9cDZYOLaFRlwrQGpJ6gSWL83JLL4er1GAJMgB/3YtGiyg18Dor08RBZy2XVrLozUk47iVkybehiistNIz6omvA/gCUkMncJ3d0Yo2daEFanPIEUuoXfQ66D42rUqJCL2ACZQBgbJAyGrBPJSDFXMQEtomA1RFZANnmhMFf/ckiMXYPeu1S9Y9WRoQtbeWGJo2IH3GqjzxM4mQqwauKWKKhCadjr94sC+aUVg9kQ8PgAU3snpLduY3c2SBqjof71q6lrENQXhhAsqlXAI5l0Cq5kDctLvTCSwEI3z423cxYRYEo785dUr1QDuQOtjQBqsRITixkyoESHaE+TNsVc+m4iEYioqKlQslNyLKzTdeOMAydDfrW4W6U0KXVOd2Z5RlWVcicx+taKJUCoTc0UTUqk75Mf5tuJ11KidIHHJVAaGOWoiItUU73TgYEaTvzL1vP7XTIB2DolBMMyZ0ZA9LE508XmEdEtCpap+gSF3sd8u08oWadUpztThqt0rzHgvD0c4PzWo5ZdTtEJwC6cPJGBQDqrfPQNmvSt7aGUIZmlWLLMGtQF5AoXG6jafbzfWqQ8EZ4PHpwDm4IW1UKrTBUaDvCej16sY89TJERVbOD8DMbUB/ErfRRkfQCYFpCPrchnmG9Hlc1Wrfhf6+FEiJxkHNZAAAAAElFTkSuQmCC" width="48" height="48">
+<p class="icon">FOOD</p>
+</div></a>
+
+
+<a href="waiting.html">
+<div class="res">
+<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAExElEQVRoQ81aO3LbSBDtJjewV4HlE5jKZDIwHbgKjAycYK0TyD6BqBOIPoGpE0g+geUTAIqIqg2WCWhn1g3MDWQpWKK3BoMh8Zk/VaaUsTC/N939+nWPECz+4uAwROycAOA7PpyuiPLzKP2eWEw3DomDw14HuycEFALgsNxjjgRX+f2v82h+s1QtgqbV42DwHhEuZOOI4EOUZpemNXTfr4P+GSFONGOWRHCq2kcLgN0MYveH7gBEq4Mo/X7jAyIJ+heA+L46lwj+BYA5IPUQ8IX4prosPYDRyzFC55MWAOSn0ezb1BVAPHr5DqHzpTmPCK6jNAtl32WXZbBAf4KIZ3oL0McoXehcQDo9Cfo/ALHXBsDXi4P23gT0NZotyjjkM3cCIH4zGOIf8I80riA/imbfruJgkCDC2xbAu9vn1aDWA9BstPbN/+B19Hc2d3EhPTHwmIpH/ZtqDGxiYRVV2c/MQqP+FAFP5LdF59FsMXY5PBsrc4/1Acsbjoe9fXjy5xgAx4jwzBuA2LC6EGcKmvr4frGeIoCLQxKxm5+8TbPPxdhhbx+f7jEm3OefHS1QvV2W0NjvbROYDT0LIDnQgSASdnFRmhVAxJ/RhVzdw3a8Kkj1jAefozSr5Y0aAGauztO9MwIYM7kQzhZHzQWLtA+dYwIMESjJIb/2sYiOiaTxxtz2/rbXlBV1AIXm6cbrgCkpTfxWsgdBEqZZZHv7xvUaCxUxt4JQxnYGABuW4YJuA67Fz+DLSIchYOdSRpk8aOEaVjBWUXUrBpLRgDaUxdM6Z47+FQL+pfdRf13EmAmow7Isz85IcwBKWFLT7dkC0AyucJYVY6rAVAs+hDp1dUMJgLoGEbwbB4NlNaEoAq3FEq4Hch3fBtBIMlSqTRsXYtwdposD10NsM74NgGe+nxsm4gowtpDWRdB5aKMHBVAGbFVILcNZ9tyWt4XFtjmUy1xpJo6DwSUiHG/YqFSINnEg0ewuB3IdqwJQq4MFu1jFAUBhMdeD+I6XA2jUAURcgzzGOFCKuTpt0jycLV5bqUgWyJ51so8V1AAamZdEoaGolKqby2pXn8PZzNFYQJnQagGu2OS3xYEGQEOZkugWqBtdNSv8pnygLWhkws42Dlg9gQTaYj9f4VfXhkDT4oa2ymCOCK/EJCHsVB0DG59tjSG6DNPFB6+5xr5QoyMhZIKuq+BzECrd02euyQL1hFYWLcyNALrMOut2h8/m6zlbiEA9gIawA4Al3d0esLqUaSPoAuuePQgI3yaxsSvR1EVQqX9LS0wAKVSVhLaW8S2GLABI3IUgofvbI93Dg+rgZaNqLdebst0WsBhnBFDIa/kjxxKJpj5UGAd1disP45X8rADwGsH8VqC/veJZ6rRo3Epa52yuTzFkDUBYAgCmvoFLgsUUXW8fOnUCwEEUMTGpFjy2fisAlJfRahKI1xnb9dg4ZwBi8RJICEhDIPGyqNma9Xnufk1E4LfYrZwqVK8tCG8Athso2Ujx+kmNdqZpn90BaCfJ4qxVNzMdfisXslncNEZKp46yYmcW4IEsfwV1kRW7BaCkU/v/ANgpACWdOvSWHgOAVo3tkg8eAYD2w4mLMt05gFJnsccN/t6M+dT0qFFlt/8BKUzdT4nxxI8AAAAASUVORK5CYII=" width="48" height="48">
+<p class="icon">WAITING ROOM</p>
+</div></a>
+
+</div>
+
+
+
+</body>
+</html> 

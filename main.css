@@ -1,0 +1,176 @@
+
+/*index.html*/
+ {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+body{
+	margin:0px;
+}
+
+.main{
+	position: relative;
+
+}
+
+
+h1{
+	color: White;
+	background-color: #1abc9c;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	margin-top:270px;
+	padding:10px;
+
+
+
+}
+
+
+
+.menu{
+
+	padding:5 px;
+	padding-right: 300px;
+	background-color: #333333;
+    box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.footer  p{
+	width:20%;
+	font-family: 'Titillium Web', sans-serif;
+	color : White;
+	background: rgba(0, 0, 0,0.5);
+	position : relative;
+	bottom: -500px;
+	padding-left : 650px;
+    margin:0px;
+    padding-left: 1000px;
+
+	}
+
+	.tiles a{
+		padding:95px;
+
+		border:dotted  ;
+		border-color: Black ;
+		position: relative;
+		bottom: -40px;
+		right: 48px;
+		margin-top: 20px;
+
+	}
+
+	.tiles .flight p{
+		width: 50%;
+		padding-left: 41px;
+		padding-top: 45px;
+		font-family: 'Titillium Web', sans-serif;
+		font-weight: bolder;
+		margin:0px;
+		margin-right: 0px;
+		color:#1abc9c;
+	}
+
+	.flight{
+		position: relative;
+		left:50px;
+	}
+
+	.map p {
+
+position: relative;
+left: 356px;
+bottom: 91px;
+color: #1abc9c;
+font-family: 'Titillium Web', sans-serif;
+font-weight:bolder;
+
+
+	}
+
+.map a
+{
+	position: relative;
+	bottom: 81px;
+	left:255px;
+
+}
+
+
+.shop a{
+
+	position: relative;
+	left: 510px;
+	bottom: 189px;
+	margin:0px;
+
+}
+
+.shop p{
+
+	position: relative;
+	font-family: 'Titillium Web', sans-serif;
+	color: #1abc9c;
+	font-weight:bolder;
+	bottom: 185px;
+	left: 608px;
+	margin:0px;
+
+}
+
+
+.service a{
+
+	position: relative;
+	left: 510px;
+	bottom: 580px;
+}
+
+.service p{
+
+	position: relative;
+	left:600px;
+	bottom: 595px;
+	font-family: 'Titillium Web', sans-serif;
+	color: #1abc9c;
+	font-weight:bolder;
+}
+
+.food a{
+	position: relative;
+	left:255px;
+	bottom: 688px;
+
+}
+
+.food p{
+position: relative;
+font-family: 'Titillium Web', sans-serif;
+color: #1abc9c;
+font-weight:bolder;
+bottom: 705px;
+left: 358px;
+
+}
+
+.wait a{
+
+position: relative;
+left:1px;
+bottom: 796px;
+}
+
+.wait p{
+position: relative;
+bottom: 815px;
+left: 65px;
+font-family: 'Titillium Web', sans-serif;
+color: #1abc9c;
+font-weight:bolder;
+
+
+}
+
+

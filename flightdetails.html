@@ -1,0 +1,171 @@
+<html>
+<head>
+    <style>
+        body
+        {
+           margin:0px;
+           background-color: White;
+        }
+        .res
+        {
+      
+            border: solid;
+            border-color:Grey;
+            display: inline-block;
+            white-space: nowrap;
+            width: 50%;
+            height: 200px;
+            position: relative;
+            bottom:30px;
+        }
+        h1
+        {
+           color: White;
+           background-color: #1abc9c;
+           text-align: center;
+           font-family: 'Titillium Web', sans-serif;
+           padding:10px;
+        }
+        .icon
+        {
+            position: relative;
+            top: 40px;
+        }
+        .menu
+        {
+           height: 60px;
+           padding-right: 300px;
+           background-color: Black;
+           box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+           
+        }
+
+        p{
+
+            font-family: 'Titillium Web', sans-serif;
+            color: Black;
+            font-weight:bolder;
+        }
+
+        .menu a{
+            position: relative;
+            top: -60px;
+            left: 10px;
+        }
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+    </style>
+    <title>
+        AIRTRACK
+    </title>
+<!-- css -->
+<!--<link rel="stylesheet" href="main.css" type="text/css" >-->
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--web fonts-->
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="menu">
+<div id="mySidenav" class="sidenav">
+  <a style="position:relative;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="contact.html">CONTACTS</a>
+
+
+</div>
+
+
+<span style="font-size:30px;cursor:pointer; position:relative;  top: 10px; left:5px;  color:White;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</div><br><br><br>
+<div style="text-align: center;width:100%;" class="tiles">
+
+<a href="list.html?v=Arrival">
+<div class="res">
+
+<img class="icon" src="data:image/png;base64,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" width="96" height="96"><p class="icon"> ARRIVAL</p>
+</div></a>
+
+
+<a href="list.html?v=Departure" >
+<div class="res">
+<img class="icon" src="data:image/png;base64,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" width="96" height="96">
+<p class="icon">DEPARTURE</p>
+</div></a>
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html> 

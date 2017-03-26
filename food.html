@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+
+	<style>
+		body
+        {
+	       margin:0px;
+
+        }
+
+        #menu{
+          
+        	
+          height: 60px;
+          background-color: Black;
+          box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+          text-align: center;
+          
+
+
+        }
+
+        label
+        {      
+        
+          font-family: 'Titillium Web', sans-serif; 
+          color: #1abc9c;
+            font-weight:bolder;
+            font-size: 45px;
+            
+
+        
+        }
+ 
+         div
+          {
+            margin:0px;
+          }
+
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+              
+              margin:0px;
+              
+          }
+
+        .container {
+          padding-right: 0px;
+          padding-left: 0px;
+          padding: 0px;
+          margin:0px;
+          }
+
+          .carousel{
+            position: relative;
+            margin:0px;
+            bottom: 20px;
+          }
+        .icon
+        {
+          display: inline;
+        }
+
+         .icont
+        {
+            position: relative;
+            top: 65px;
+            left: 50px;
+        }
+
+         .tile
+        {
+      
+            border: solid;
+            border-color:Teal;
+            border-width:7px;
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+            height: 220px;
+
+            background-color:White;
+  
+          }
+
+          .res h1{
+            color:Black;
+             font-family: 'Titillium Web', sans-serif;
+              font-weight:bold; font-size:20px;
+                position:absolute;
+                text-align: center;
+                margin:0px;
+                left: 200px;
+                top: 50px;
+                               
+
+          }
+
+          body,a,span  {
+    font-family: "Lato", sans-serif;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    top: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a{
+  text-decoration: none;
+}
+
+.iconh
+{
+
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom:45px;
+  margin:0px;
+  padding: 0px;
+  
+
+}
+
+#mleft{
+
+    text-align: left;
+
+}
+
+
+
+
+	</style>
+
+<!--LINKS-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="slideshow.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+ <!--FONTS-->
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <script type="text/javascript" src="slideshow.js"></script>
+ 
+
+</head>
+
+
+	<body bgcolor="#ff7272">
+	
+
+
+		<div id="menu">
+      <div id=mleft>
+			<div id="mySidenav" class="sidenav">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="contact.html">CONTACTS</a>
+</div>
+
+
+<span style="cursor:pointer; color:White;  font-size:30px; position:relative; top:7px; left:7px;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</div>
+
+   <img class="icon" width="48px" style="position:relative; bottom:55px; text-align:center;" src="data:image/png;base64,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" width="48" height="48"><label style="position:relative; bottom:45px;">FOOD</label>
+
+    
+    </div>
+
+
+<div style="width:100%;" class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="1.jpg" alt="Chania" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="2.jpg" alt="Chania" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="3.jpg" alt="Flower" style="width:100%;">
+      </div>
+    
+
+  </div>
+</div>
+</div>
+
+  <div class="col-md-4" style="text-align: left; width: 100%; height: 100%;" >
+        <ul id="restaurantslist" class="list-group" style="width: 100%; height: 100%;">
+          <!-- Conatct Object li.list-group-item.contact will be added here by js -->
+        </ul>
+    </div>
+<script src="rapp.js"></script>
+
+<!--
+<div class="tile" >
+<div class="res">
+<a href="">
+
+<img class="icont" style="position:relative; top:50px;" src="https://s29.postimg.org/rnrjll9rb/Mc_Donald_s_Golden_Arches.png" width="100" height="100">
+<label style="font-size:20px; position: relative; color:Black; left:95px;">Mc Donalds</label></a>
+
+</div>
+</div>
+
+
+<div class="tile" style="position:relative; top:20px;">
+<div class="res">
+<a href="">
+
+<img class="icont" style="position:relative; top:60px;" src="https://s9.postimg.org/5kmwqdr9b/CCD_LOGO_FB.png" width="100" height="100">
+<h1 >Cafe Coffee Day</h1></a>
+
+</div>
+</div>
+
+<div class="tile" style="position:relative; top:40px;">
+<div class="res">
+<a href=""> 
+
+<img class="icont" src="https://s17.postimg.org/sdfc7lomn/Starbucks_Logo_PNG_Image.png" width="100" height="100">
+<h1>Starbucks</h1></a>
+
+
+</div>
+
+</div>
+
+
+
+<div class="tile" style="position:relative; top:60px;">
+<div class="res">
+<a href="">
+
+<img class="icont" src="https://s9.postimg.org/z8zcgsncv/logo_subway.png" width="120" height="120">
+<h1>Subway</h1></a>
+
+</div>
+</div>
+-->
+
+	</body>
+
+
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  <style>
+    body
+        {
+         margin:0px;
+
+        }
+
+        #menu{
+          
+          
+          height: 60px;
+          background-color: Black;
+          box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+          text-align: center;
+          
+
+
+        }
+
+        label
+        {      
+        
+          font-family: 'Titillium Web', sans-serif; 
+          color: #1abc9c;
+            font-weight:bolder;
+            font-size: 45px;
+            
+
+        
+        }
+ 
+         div
+          {
+            margin:0px;
+          }
+
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+              
+              margin:0px;
+              
+          }
+
+        .container {
+          padding-right: 0px;
+          padding-left: 0px;
+          padding: 0px;
+          margin:0px;
+          }
+
+          .carousel{
+            position: relative;
+            margin:0px;
+            bottom: 20px;
+          }
+        .icon
+        {
+          display: inline;
+        }
+
+         .icont
+        {
+            position: relative;
+            top: 65px;
+            left: 50px;
+        }
+
+         .tile
+        {
+      
+            border: solid;
+            border-color:Teal;
+            border-width:7px;
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+            height: 220px;
+
+            background-color:White;
+  
+          }
+
+          .res h1{
+            color:Black;
+             font-family: 'Titillium Web', sans-serif;
+              font-weight:bold; font-size:20px;
+                position:absolute;
+                text-align: center;
+                margin:0px;
+                left: 200px;
+                top: 50px;
+                               
+
+          }
+
+          body,a,span  {
+    font-family: "Lato", sans-serif;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size: 25px;
+    color: White;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1abc9c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    
+    left: 120px;
+    top: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a{
+  text-decoration: none;
+}
+
+.iconh
+{
+
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom:45px;
+  margin:0px;
+  padding: 0px;
+  
+
+}
+
+#mleft{
+
+    text-align: left;
+
+}
+
+
+  </style>
+
+<!--LINKS-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="slidesho=w.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <!--FONTS-->
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <script type="text/javascript" src="slideshow.js"></script>
+ 
+
+</head>
+
+
+  <body>
+  
+
+    <div id="menu">
+      <div id=mleft>
+      <div id="mySidenav" class="sidenav">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  <a href="index.html">HOME</a>
+  <a href="flightdetails.html">FLIGHTS</a>
+  <a href="map.html">MAPS</a>
+  <a href="shop.html">SHOPS</a>
+  <a href="service.html">SERVICES</a>
+  <a href="food.html">FOOD</a>
+  <a href="waiting.html">LOUNGE</a>
+  <a href="#">CONTACTS</a>
+</div>
+
+
+<span style="cursor:pointer; color:White;  font-size:30px; position:relative; top:7px; left:7px;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</div>
+
+   <img class="icon" width="48px" style="position:relative; bottom:55px; text-align:center;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEcUlEQVRoQ+1XXWhbZRh+3qRZu/ys8YdU5lZTliY6J8vQeVFKSd2FiEKzITO5kPVU8EZ07d1WLxYvWi+X6X0TLyRlKDsi9Qc2GoeIVN2UKdhWadqtF1ao6ayjdpBXvphkSc45S9JzjrKS76qk3/e+z/M+z/t+3yHc44vucfxoEvi/FWwq0FRAZwV0Wej0+DfDDAwQEBI4GJwBUbLt75ZzsdihrE5sdR3XRWB0bCaYI0oT0F6eTRAhWGJvjz71Xl0odGzSRUDkPTU2M0hECTUMDKQtzCPjbz79vRbGRGrBC7o9AHAIIKGke+n6Kr69sohunwfr6xury8vZdYe99fPzyWOvVsfRTaAWiULCeOtmy1tFW90BjUEAwWpQ135axief/Yi9e+7Dkf7HMP/LSp5Mh8eVBbEkvRSQi2dKBELhT7055ISfRdAMwS6l5f66fXw3JUQystLSQw/ulF0OW58a6HISGxu3IUj4fR60t9sV4kkRfwl36Y++o1MyAQOl3cxZJgxfvvBC3T4+NTYTJ6KTxRgWK8Fpt8Fpt8Lp2KEAIoC2tdka6wCGJEX9SRUFpt1Mt4RXH6mIyJwmWKW0/Fymnkynx2eSTseOEw57C1x2GwQJrXX23Utwu3dCermnZmhmfEFWDEvH/RX9VBG9N/xxyEqWaUU0oQYodll+/pxmM56fCyIHUf2waES1fV9+9StWfr+JYwOH8v/+UL6KDs8u9PbsUw3LwBoYMlkRrwauUKD4Q194Kk6UB6JcVWoUmvEkwGGAvNUHflv5E9dvrOLA/t15qwjAYsKMvH5Es+Il0BaWy5tV64BC31BYWOmvNEAH1Q65HLabBw88cMnndXWpNaMA3eFx5Y9enP4Z311ZRPT4YXTuvT//m5rvGwVdjkvVoKHwVJAJV8s3+rp2oXO3A517nJrVK46/Z0IBHH7Si7W1W1i68QeeePxhTYswcq+9Enn0/ZpNoLFBs8P6wlOx1lbrmf1+N3xeF5yO2tNCAL44PYveHl9JhbsBY+bFoWhAYb1GyKgSKHj7DP69E3QtBoO0vpuqRuJWElUQSKTmQyAWwPOPMz0r7+scviYLnlWfB/qrL+IqCDB4kAgntgqewR8Rkywum8Tk/DDAZzUaoOJC2mo+dQtdWHBjczPEORIz3QtCsPrFKRIWpoe4WDIEpAFbWop2lS68iclZmUB3bvcCSiO8XyRsyGNOq3oTk3NZNeIwwPumEygMgoVqcgz+YSgSULxADbXQVoOVn0uk5gZBUH4nMPVL0e60ETkUTWxUUBFnIjWXrB4GosGHIgHRV4Yt03pgIjWbIaLSy1Y0PLEtWN7kRrAwhYC6/2lEinTHjQBdHsMkApX+F2/5oahf9+WoRt4UAuX+z3+ItNnC0tGuuj9PG1HJLAJiymQIlDRy4vxnCjRSQb17TVFAL6hGzjcJNFItM/ZuPwVefGOUzaiUUTE/eGe8ougKBZoEjCq1Rpztr4DJBTQ8/PabQoaXyOSATQVMLnDN8E0FapbI5A3/AFy3jEAgDH9RAAAAAElFTkSuQmCC" width="48" height="48"><label style="position:relative; bottom:45px; ">FLIGHT</label>
+
+    
+    </div>
+
+
+<div style="width:100%;" class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images\f1.jpg" alt="Chania" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images\f2.jpg" alt="Chania" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images\f3.jpg" alt="Flower" style="width:100%;">
+      </div>
+    
+    
+  </div>
+</div>
+</div>
+
+
+<div class="tile" >
+<div class="res">
+<a href="">
+
+<img class="icont" style="position:relative; top:50px;" src="https://s29.postimg.org/rnrjll9rb/Mc_Donald_s_Golden_Arches.png" width="100" height="100">
+<label style="font-size:20px; position: relative; left:95px; color:Black;"></label></a>
+
+</div>
+</div>
+
+
+<div class="tile" style="position:relative; top:20px;">
+<div class="res">
+<a href="">
+
+<img class="icont" style="position:relative; top:60px;" src="https://s9.postimg.org/5kmwqdr9b/CCD_LOGO_FB.png" width="100" height="100">
+<h1 >SHOP 2</h1></a>
+
+</div>
+</div>
+
+<div class="tile" style="position:relative; top:40px;">
+<div class="res">
+<a href=""> 
+
+<img class="icont" src="https://s17.postimg.org/sdfc7lomn/Starbucks_Logo_PNG_Image.png" width="100" height="100">
+<h1>SHOP 3</h1></a>
+
+
+</div>
+
+</div>
+
+
+
+<div class="tile" style="position:relative; top:60px;">
+<div class="res">
+<a href="">
+
+<img class="icont" src="https://s9.postimg.org/z8zcgsncv/logo_subway.png" width="120" height="120">
+<h1>SHOP 4</h1></a>
+
+</div>
+</div>
+
+
+  </body>
+
+
+
+</html>

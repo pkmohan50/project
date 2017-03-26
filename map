@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+
+	<style>
+		body
+        {
+	       margin:0px;
+        }
+
+		.menu
+        {
+	       height: 60px;
+	       padding-right: 300px;
+	       background-color: #333333;
+           box-shadow: 1px 5px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .menu a{
+           position: relative;
+           top: 4px;
+           left: 10px;
+        }
+
+        .menu p{
+            position: relative;
+            bottom:104px ;
+            left: 145px;
+            text-align: center;
+	        font-family: 'Titillium Web', sans-serif;	
+	        color: #1abc9c;
+            font-weight:bolder;
+            font-size: 45px;
+
+        }
+
+        .pizza{
+        	position: relative;
+        	display: inline-block;
+            white-space: nowrap;
+            width: 30%;
+            height: 200px;
+        	width:50%;
+        	bottom: 207px;
+        	left: 158px;
+        } 
+
+ * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  width:100%;
+  height:450px;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin:0px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade ;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+	</style>
+
+<!--LINKS-->
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ <!--FONTS-->
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <script type="text/javascript" src="slideshow.js"></script>
+
+</head>
+
+
+	<body>
+		<div class="menu">
+			<a href="" target="_blank"> <img class="icon icons8-Menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAsUlEQVRoQ+2WMQ6AQAgE797jC+x8up0v8D0aS2NBARPDZq1xIzMEmaP5M5t//3ADfxu0ARtIEvAIJQGmX9czsK/LlcYCBmzH+YL+MeAGQPpPtL4BGGB5vN4WKkcEB9oADDiMt4EQEVygZ8CnBDwy+qdE+xGCJ6A8Xm8LlSOCA20ABhzG20CICC7QM9D+R+YG4JnXP+ZggOXxeluoHBEcaAMw4DDeBkJEcIENwIDD+PYGbvRgMDGBdleOAAAAAElFTkSuQmCC" width="48" height="48"> </a>
+			<p >MAP</p>
+
+			
+			 <div class="pizza">
+			<img class="icon icons8-Pizza" src="data:image/png;base64,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" width="48" height="48">
+			</div>
+
+
+		</div>
+
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+        <img src="C:\Users\k106tu\Desktop\AIRTRACK 3\kari-shea-188474.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="C:\Users\k106tu\Desktop\AIRTRACK 3\lance-anderson-167718.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="C:\Users\k106tu\Desktop\AIRTRACK 3\cel-lisboa-60315.jpg" style="width:100%">
+    
+  </div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+	</body>
+
+
+
+</html>
