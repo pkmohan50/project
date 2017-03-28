@@ -1,0 +1,6 @@
+
+Security Features:
+In order to ensure security and also to ensure that only a genuine user is able to 
+access the application, we intend to create a method whereby the user needs to identify himself by typing in his PNR number
+and will need to generate a OTP which will be sent to the same mobile number that was used for booking the ticket.
+Once he types in rhe OTP, he has access to all the features of the application. 
